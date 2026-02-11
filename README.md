@@ -8,10 +8,10 @@ The naming, Perf Neon, is inspired by a Linux Distribution called KDE Neon, wher
 While it's mostly used for another kernel developers to compare their work with a literal close-to-stock kernel, it's also fulfill the dream of a purists, where they want everything stable but also wanted extra spices on top of it.
 
 # Release schedules
-This kernel follows weekly builds of [devices/ginkgo/builds](https://download.lineageos.org/devices/ginkgo/builds), you will get a new kernel build every sunday. You might need to check out the GitHub repo for new releases.
+This kernel follows weekly builds of LineageOS, you will get a new kernel build every sunday. You might need to check out the GitHub repo for new releases.
 
 # Compatibility
-Compatible with official LineageOS builds for Redmi Note 8, but since this kernel strictly follows [LineageOS/android_kernel_xiaomi_sm6125](https://github.com/LineageOS/android_kernel_xiaomi_sm6125), the compatibility may vary between each releases. Always make sure you have a kernel backup before proceeding. This kernel might gonna work on non-lineage based roms but it is not guaranteed.
+Compatible with official LineageOS builds of [devices/ginkgo/builds](https://download.lineageos.org/devices/ginkgo/builds), [devices/laurel_sprout/builds](https://download.lineageos.org/devices/laurel_sprout/builds), but since this kernel strictly follows [LineageOS/android_kernel_xiaomi_sm6125](https://github.com/LineageOS/android_kernel_xiaomi_sm6125), the compatibility may vary between each releases. Always make sure you have a kernel backup before proceeding. This kernel might gonna work on non-lineage based roms but it is not guaranteed.
 
 # Credits
 [TBYOOL](https://github.com/tbyool) for the buildscripts & kernel patches.   
