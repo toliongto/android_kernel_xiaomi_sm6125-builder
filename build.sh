@@ -165,7 +165,7 @@ add_ksu() {
             echo "KSU_MANUAL_HOOK=y" >> $MAIN_DEFCONFIG
             # Apply susfs patches
             echo "Applying SUSFS patches..."
-            wget -qO- $SILLY_SUSFS_PATCH | patch -s -p1
+            wget -qO- $SILLY_SUSFS_PATCH | patch -s -p1 --fuzz=5
             # Apply ksu susfs patches
             cd KernelSU-Next
             wget -qO- $SILLY_KSUN_SUSFS_PATCH | patch -s -p1
@@ -183,7 +183,7 @@ add_ksu() {
             echo "CONFIG_KSU_SUSFS_SPOOF_UNAME=y" >> $MAIN_DEFCONFIG
             echo "CONFIG_KSU_SUSFS_ENABLE_LOG=y" >> $MAIN_DEFCONFIG
             echo "CONFIG_KSU_SUSFS_HIDE_KSU_SUSFS_SYMBOLS=y" >> $MAIN_DEFCONFIG
-            echo "CONFIG_KSU_SUSFS_SPOOF_CMDLINE_OR_BOOTCONFIG=n" >> $MAIN_DEFCONFIG
+            echo "CONFIG_KSU_SUSFS_SPOOF_CMDLINE_OR_BOOTCONFIG=y" >> $MAIN_DEFCONFIG
             echo "CONFIG_KSU_SUSFS_OPEN_REDIRECT=y" >> $MAIN_DEFCONFIG
             echo "CONFIG_KSU_SUSFS_SUS_MAP=y" >> $MAIN_DEFCONFIG
             # Disable custom susfs configs
